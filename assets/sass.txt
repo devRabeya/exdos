@@ -1,0 +1,1 @@
+sass --watch E:\Rabeya\prectise\exdos\assets\scss\main.scss:E:\Rabeya\prectise\exdos\assets\css\style.css.map
