@@ -1,1 +1,22 @@
 @use'../../utils' as *;
+.tp-project-tab {
+     & button{
+        color: #fff;
+        font-size: 90px;
+        line-height: 1.2;
+        font-family: var( --tp-font-heading);
+        border-bottom: 1px solid #2f446b;
+        padding: 20px 100px;
+        padding-right: 30px;
+        transition: .3s;
+        &.active{
+            border-color: var(--tp-theme-color-2);
+            color: var(--tp-theme-color-2);
+        }
+    }
+}
+.tp-project-thumb{
+    & img{
+        border-radius: 20px;
+    }
+}

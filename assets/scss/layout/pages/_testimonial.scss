@@ -1,1 +1,24 @@
 @use'../../utils' as *;
+
+.tp-testimonial-item {
+    &-headi {
+        font-size: 100px;
+    }
+    &-name {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    &-design {
+        font-size: 17px;
+        color: #57595C;
+        & span {
+            width: 60px;
+            height: 1px;
+            display: inline-block;
+            background: #57595C;
+            margin-right: 5px;
+            transform: translateY(-5px);
+        }
+    }
+}
+

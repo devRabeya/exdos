@@ -1,21 +1,64 @@
 @use'../../utils' as *;
 
 .tp-newsletter{
+    &-top{
+        margin-top: -110px;
+    }
     &-bg{
         padding: 80px;
         border-radius: 20px;
     }
     &-box{
-       & input{
-           border-color: #fff;
-           color: #fff;
-           &:focus{
+        & form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        & input{
             border-color: #fff;
-        }
-           @include tp-placeholder{
             color: #fff;
+            &:focus{
+                border-color: #fff;
+                color: #fff;
+            }
+            @include tp-placeholder{
+                color: #fff;
+               }
+        }
+        &-input{
+           & input{
+            width: calc(100% - 200px);
+            }
+        }
+        & img{
+            position: absolute;
+            left: 335%;
+            top: 23px;
         }
         }
+
+    &-back{
+        font-size: 100px;
+        color: #fff;
+        opacity: 0.1;
+        position: absolute;
+        left: 127px;
+        top: -20px;
     }
 
+}
+img.tp-about-shape-1{
+    top: 26%;
+    left: -3%;
+    z-index: 1;
+}
+img.tp-about-shape-2{
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+img.tp-about-shape-3{
+    left: 33%;
+    top: 41%;
+    z-index: 1;
 }

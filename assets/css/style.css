@@ -26,7 +26,9 @@
   --tp-theme-color-2:#FFE815;
   --tp-heading-color:#0A0E1A;
   --tp-body-color:#57595C;
-  --tp-common-bg:#0D101B;
+  --tp-rom-bg:#FBF6EF;
+  --tp-common-bg:#0A0E1A;
+  --tp-nbule-bg:#001C52;
   --tp-black: black;
   --tp-white: white;
 }
@@ -45,7 +47,6 @@
   color: #fff;
   display: inline-block;
 }
-
 .tp-btn-sce {
   background: var(--tp-theme-color-2);
   font-family: var(--tp-font-heading);
@@ -57,6 +58,17 @@
 }
 .tp-btn-sce-lg {
   padding: 22px 45px;
+}
+.tp-btn-cercle {
+  opacity: 0.3;
+  font-size: 60px;
+  color: #fff;
+  font-family: var(--tp-font-heading);
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 45px 75px;
+  line-height: 1;
+  border-radius: 100%;
 }
 
 h1.tp-section-title {
@@ -261,9 +273,17 @@ img.shape-5 {
   color: #57595C;
 }
 
+.tp-newsletter-top {
+  margin-top: -110px;
+}
 .tp-newsletter-bg {
   padding: 80px;
   border-radius: 20px;
+}
+.tp-newsletter-box form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .tp-newsletter-box input {
   border-color: #fff;
@@ -271,6 +291,7 @@ img.shape-5 {
 }
 .tp-newsletter-box input:focus {
   border-color: #fff;
+  color: #fff;
 }
 .tp-newsletter-box input::-webkit-input-placeholder {
   color: #fff;
@@ -283,6 +304,127 @@ img.shape-5 {
 }
 .tp-newsletter-box input:-ms-input-placeholder {
   color: #fff;
+}
+.tp-newsletter-box-input input {
+  width: calc(100% - 200px);
+}
+.tp-newsletter-box img {
+  position: absolute;
+  left: 335%;
+  top: 23px;
+}
+.tp-newsletter-back {
+  font-size: 100px;
+  color: #fff;
+  opacity: 0.1;
+  position: absolute;
+  left: 127px;
+  top: -20px;
+}
+
+img.tp-about-shape-1 {
+  top: 26%;
+  left: -3%;
+  z-index: 1;
+}
+
+img.tp-about-shape-2 {
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+img.tp-about-shape-3 {
+  left: 33%;
+  top: 41%;
+  z-index: 1;
+}
+
+.tp-project-tab button {
+  color: #fff;
+  font-size: 90px;
+  line-height: 1.2;
+  font-family: var(--tp-font-heading);
+  border-bottom: 1px solid #2f446b;
+  padding: 20px 100px;
+  padding-right: 30px;
+  transition: 0.3s;
+}
+.tp-project-tab button.active {
+  border-color: var(--tp-theme-color-2);
+  color: var(--tp-theme-color-2);
+}
+
+.tp-project-thumb img {
+  border-radius: 20px;
+}
+
+.tpservices {
+  border: 1px solid #57595C;
+  padding: 40px;
+  margin: -1px;
+  transition: 0.3s;
+}
+.tpservices__title {
+  font-size: 30px;
+}
+.tpservices__list ul {
+  list-style: none;
+}
+.tpservices__list ul li {
+  margin-bottom: 12px;
+  color: #57595C;
+}
+.tpservices__list ul li::before {
+  background-color: #57595C;
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 10px;
+  transform: translateY(-2px);
+}
+.tpservices:hover {
+  background-color: var(--tp-rom-bg);
+}
+.tpservices:hover .tpservises__btn {
+  background-color: var(--tp-theme-color);
+  color: #fff;
+}
+
+.tpservises__btn {
+  background-color: var(--tp-rom-bg);
+  padding: 12px 38px;
+  font-family: var(--tp-font-heading);
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+.tpservises__btn i {
+  transform: rotate(-45deg);
+}
+
+.tp-testimonial-item-headi {
+  font-size: 100px;
+}
+.tp-testimonial-item-name {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.tp-testimonial-item-design {
+  font-size: 17px;
+  color: #57595C;
+}
+.tp-testimonial-item-design span {
+  width: 60px;
+  height: 1px;
+  display: inline-block;
+  background: #57595C;
+  margin-right: 5px;
+  transform: translateY(-5px);
 }
 
 * {
@@ -426,7 +568,7 @@ p {
   font-family: var(--tp-font-body);
   font-size: 17px;
   font-weight: var(--tp-fw-normal);
-  color: var(--tp-text-body);
+  color: var(--tp-body-color);
   margin-bottom: 15px;
   line-height: 28px;
 }
@@ -659,6 +801,18 @@ overflow-y-visible {
 
 .tp-blue-bg {
   background-color: var(--tp-theme-color);
+}
+
+.tp-nblue-bg {
+  background-color: var(--tp-nbule-bg);
+}
+
+.br-20 {
+  border-radius: 20px;
+}
+
+.br-5 {
+  border-radius: 5px;
 }
 
 /*-- 

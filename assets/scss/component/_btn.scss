@@ -8,16 +8,27 @@
     border-radius: 5px;
     color: #fff;
     display: inline-block;
-}
-.tp-btn-sce{
-    background: var(--tp-theme-color-2);
-    font-family: var(--tp-font-heading);
-    padding: 16px 42px;
-    font-size: 18px;
-    border-radius: 5px;
-    color: #0A0E1A;
-    display: inline-block;
-    &-lg{
-        padding: 22px 45px;
+    &-sce{
+        background: var(--tp-theme-color-2);
+        font-family: var(--tp-font-heading);
+        padding: 16px 42px;
+        font-size: 18px;
+        border-radius: 5px;
+        color: #0A0E1A;
+        display: inline-block;
+        &-lg{
+            padding: 22px 45px;
+        }
+    }
+    &-cercle{
+        opacity: 0.3;
+        font-size: 60px;
+        color: #fff;
+        font-family: var(--tp-font-heading);
+        display: inline-block;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        padding: 45px 75px;
+        line-height: 1;
+        border-radius: 100%;
     }
 }
